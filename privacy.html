@@ -37,10 +37,11 @@ why, and what it does — and does not — do with it.</p>
 
 <h2>Information stored only on your device</h2>
 <p>Your progress — display name, skill rating, streak, hearts, XP, topic progress, and
-achievements — is stored locally on your device. If you have iCloud enabled, this syncs across
-your own devices through your own private iCloud account (via Apple's CloudKit), the same way
-Notes or Reminders sync between your devices. Catechesi does not have access to this data; it
-never leaves Apple's systems and your own device.</p>
+achievements — is stored locally on your device. On iOS, if you have iCloud enabled, this syncs
+across your own devices through your own private iCloud account (via Apple's CloudKit), the same
+way Notes or Reminders sync between your devices, and Catechesi does not have access to this
+data; it never leaves Apple's systems and your own device. The Android version stores this same
+information locally on your device and does not sync it to any personal cloud account.</p>
 
 <h2>Anonymous usage analytics</h2>
 <p>Catechesi logs a small number of anonymous, first-party events — app opened, a free trial
@@ -53,11 +54,12 @@ advertising SDK anywhere in the app, no advertising identifier, and no cross-app
 
 <h2>Information collected if you create an account</h2>
 <p>Creating an account is optional, and is only needed to purchase a subscription or to add
-friends. If you choose to sign in with "Sign in with Apple," we receive:</p>
+friends. On iOS you sign in with "Sign in with Apple"; on Android you sign in with Google. Either
+way, we receive:</p>
 <ul>
-  <li>An identifier Apple provides for your account with this app</li>
-  <li>An email address — either your real one, or the private relay address Apple generates for
-    you, depending on the choice you make when signing in</li>
+  <li>An identifier your sign-in provider gives for your account with this app</li>
+  <li>An email address — either your real one, or (on iOS, if you choose it) the private relay
+    address Apple generates for you</li>
   <li>The display name, skill rating, and streak information described above, so it can be
     synced across your devices and shown to confirmed friends</li>
 </ul>
@@ -88,14 +90,22 @@ visible to other users.</p>
 is submitted as part of this — just the code itself.</p>
 
 <h2>Purchases</h2>
-<p>Subscription purchases are handled entirely by Apple and our subscription management
-provider, RevenueCat. Catechesi never sees or stores your payment or card information — Apple
-processes all billing directly.</p>
+<p>Subscription purchases are handled entirely by Apple or Google Play (depending on which
+version of the app you use) and our subscription management provider, RevenueCat. Catechesi
+never sees or stores your payment or card information — Apple or Google processes all billing
+directly.</p>
+
+<h2>Family Sharing</h2>
+<p>If you subscribe to Family Premium, you can generate a code and share your subscription with
+up to five other people. Catechesi stores which accounts are sharing your plan. If you're the one
+sharing a plan, the person who owns it can see your display name and remove you from their plan
+at any time. If you've joined someone else's plan, Catechesi only tells you whether their
+subscription is still active — nothing else about them.</p>
 
 <h2>Children's privacy</h2>
 <p>Catechesi's core learning content requires no account and is appropriate for a general
-audience. Creating an account requires Sign in with Apple, which is subject to Apple's own
-age requirements and protections for Apple IDs.</p>
+audience. Creating an account requires Sign in with Apple (iOS) or a Google Account (Android),
+each subject to that provider's own age requirements and protections.</p>
 
 <h2>Your choices</h2>
 <ul>
